@@ -24,25 +24,6 @@ const cartReducer = (state, action) => {
             updatedItems = state.items.concat(action.item);
         }
 
-        // let i,len = state.items.length;
-        // console.log(state.items);
-        // console.log(state.totalAmount);
-        // for(i = 0 ;i < len; ++i) {
-        //     if(state.items[i].id === action.item.id){
-        //         state.items[i].amount += action.item.amount;
-        //         break;
-        //     }
-        // }
-
-        // console.log(action);
-
-        // if(i === len){
-        //     state.items.push(action.item);
-        //     console.log(state.items);
-        //     state.totalAmount = state.totalAmount + (action.item.amount*action.item.price);
-        //     console.log(state.totalAmount);
-        // }
-
         console.log("updateditems", updatedItems);
         return {
             items: updatedItems,
